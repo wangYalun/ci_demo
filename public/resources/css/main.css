@@ -1,0 +1,340 @@
+/*通用样式*/
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px none;
+}
+
+.none-show{
+    display: none;
+}
+.content{
+    /*margin: 0 auto;
+    max-width: 1841px;
+    min-width: 1238px;*/
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+body {
+    font-family: Arial,"Microsoft Yahei";
+    font-size: 80%;
+    line-height: 1.42857;
+    color: #333;
+    min-width: 1254px;
+}
+.prompt-tip{
+    padding-left: 29px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #aaa;
+
+}
+.navbar{
+    background-color:#f8f8f8;
+    border-bottom:solid 1px #e7e7e7;
+    margin-bottom: 10px;
+    position: relative;
+    height: 60px;
+}
+.navbar .navbar-header{
+    position: absolute;
+}
+.navbar .navbar-right{
+    margin-top: 15px;
+    position: absolute;
+    right: 30px;
+}
+
+.list1-item{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 1px;
+    z-index: 2;
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #428BCA;
+}
+.list1-item:hover{
+    background-color: #49a1e8;
+}
+.list2-item{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 1px;
+    background-color: #FFF;
+}
+.list2-item:hover{
+    background-color: #eaeaea;
+}
+
+.mod{
+    margin-bottom: 15px;
+    position: relative;
+    border:1px solid #428BCA;
+    /*max-width: 1628px;*/
+}
+.mod .mod-header{
+    height: 41px;
+    line-height: 41px;
+    padding: 0px 23px;
+    background-color: #428BCA;
+    color: #fff;
+    position: relative;
+}
+.mod .mod-body{
+    position: relative;
+    padding-bottom: 1px;
+    height: 100%;
+}
+.mod h4{
+    /*position: absolute;*/
+    display: inline-block;
+}
+.mod .mod-header .option{
+    position: absolute;
+    right: 20px;
+    top:5px;
+    color:#000;
+}
+.rate{
+    font-size: 0.6rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.rate .asc{
+    color:#f00;
+}
+.rate .desc{
+    color:#008f44;
+}
+.rate .i_arr{
+    background:url(../images/i_arr.png);
+    width: 9px;
+    display: inline-block;
+    height: 11px;
+    line-height: 11px;
+    font-size: 0px;
+    margin: 0px 5px 5px 5px;
+    vertical-align: middle;
+}
+.rate .asc .i_arr{
+    background-position: 0px 0px;
+}
+.rate .desc .i_arr{
+    background-position: 0px -11px;
+}
+.mod .content{
+    padding:15px 23px;
+}
+.js-tab{
+    display: inline-block;
+    padding: 0;
+    /*float: left;*/
+}
+.js-tab .tab-li li{
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    cursor: pointer;
+    font-size:13px;
+    padding:0px 14px;
+    background-color: #428BCA;
+    color:#fff;
+}
+.js-tab .tab-li li:hover{
+    background-color: #49a1e8;
+}
+.js-tab .tab-li li.on{
+    background-color: #53b3f7;
+}
+.js-checkbox{
+    display: inline-block; /*统一浏览器*/
+    margin-left: 20px;
+    /*float: left;*/
+    margin-top: 5px;
+
+}
+.js-checkbox label{
+    margin-right: 8px;
+}
+.js-checkbox input{
+    vertical-align: middle;
+}
+.mod-body .detail-table{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.detail-table thead td:first-child{
+    border-left: 0px none;
+}
+.detail-table tbody td:first-child{
+    border-left: 0px none;
+}
+.detail-table thead td{
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+.detail-table td{
+    border: 1px solid #E8E8E8;
+    height: 28px;
+
+}
+
+.select_input input{
+
+
+}
+
+.haha .user_lable{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+    text-align: right;
+    margin-right: 20px;
+    color: #005eac
+}
+
+.haha .info_text{
+
+}
+.wrap-mod{
+
+}
+.mod-define{
+    height: 270px;
+    width: 316px;
+    border:1px solid #428BCA;
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+.mod-define .mod-header{
+    height: 41px;
+    line-height: 41px;
+    padding: 0px 23px;
+    background-color: #428BCA;
+    color: #FFF;
+    position: relative;
+}
+.mid_cont{
+    width: 644px;
+}
+.select_input{
+    padding: 20px 20px;
+}
+.select_input input[type='text']{
+    height: 22px;
+    font-size: 14px;
+    font-family: arial;
+    margin: 0px 5px 0px;
+
+}
+.select_input input[type='button']{
+    min-width: 50px;
+    height: 26px;
+    color: #fff;
+    background-color: #3385FF;
+    border:0px none;
+    border-bottom: 1px solid #2D78F4;
+    cursor: pointer;
+    padding:0 10px;
+}
+.select_input select{
+    width: 100px;
+    height: 24px;
+    font-size: 14px;
+    font-family: arial;
+    margin-right: 10px;
+}
+.select_input input[type='button']:hover{
+    background-color: #317EF3;
+}
+.chartpanel{
+    text-align: center;
+}
+.loading-card {
+    background: #FFF none repeat scroll 0% 0%;
+    padding-top: 200px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    height: 200px;
+}
+a.help{
+    width: 24px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-image: url("../images/common_images.png");
+    background-position: 5px -1527px;
+    text-indent: -9999px;
+}
+/*a.help:hover{
+        background-position: 5px -15px;
+}*/
+.tips {
+    display: none;
+    position: absolute;
+    z-index: 199;
+    padding: 15px 25px 26px;
+    background: #555 none repeat scroll 0% 0%;
+    color: #FDFDFD;
+    opacity: 0.9;
+    max-width: 350px;
+}
+
+.tips .corner {
+    position: absolute;
+    height: 0px;
+    left: -10px;
+    top: 15px;
+    width: 0px;
+    overflow: hidden;
+    font-size: 0px;
+    line-height: 0;
+    border-color: transparent #555 transparent transparent;
+    border-style: dashed solid dashed dashed;
+    border-width: 5px;
+}
+.tips p, .sdk-tips p {
+    font-size: 12px;
+    line-height: 24px;
+}
+.tips .highlight, .sdk-tips .highlight {
+    color: #428BCA;
+}
+
+.detail-table .sort{
+    cursor: pointer;
+}
+.detail-table .sort:hover{
+    background-color: #78cdf8;
+}
+
+.detail-table .sortdesc{
+    cursor: pointer;
+}
+.detail-table .sortdesc:hover{
+    background-color: #78cdf8;
+}
+.avatar{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.table-img{
+    width:70px;
+}
