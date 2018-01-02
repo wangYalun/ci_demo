@@ -258,7 +258,7 @@ define('VIEWPATH', $view_folder);
  * 自动加载第三方类库 这个要放在加载bootstrap的前面
  * --------------------------------------------------------------------
  */
-require_once '../vendor/autoload.php';
+//require_once '../vendor/autoload.php';
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE

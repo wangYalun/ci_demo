@@ -24,6 +24,12 @@ class Api_test extends Apibase {
         var_dump($obj);
     }
 
+    public function index_get()
+    {
+
+        $this->return_data(['allen', _get_ip()], 'success');
+    }
+
     //H5 EVENT-Stream 后台接口
     public function realtime_get()
     {
@@ -50,6 +56,7 @@ class Api_test extends Apibase {
     {
         echo $_SERVER['REQUEST_TIME'];
     }
+
     //测试CSV包
     public function csv_get()
     {
@@ -58,6 +65,7 @@ class Api_test extends Apibase {
         $csv->insertOne(["allen", 20, '326402399@qq.com']);
         $csv->output('users.csv');
     }
+
     //测试mongodb 连接1
     public function mongo_get()
     {
@@ -68,7 +76,8 @@ class Api_test extends Apibase {
         $collection = $db->go_src_user_access_h5;
         $collection->insert($request_data);
     }
-     //测试mongodb 连接1
+
+    //测试mongodb 连接1
     public function mongo_post()
     {
         $request_data = $this->input->post(array('uid', 'username', 'mobile', 'source', 'platform_id', 'channel_id', 'app_version',
@@ -79,6 +88,7 @@ class Api_test extends Apibase {
         $collection = $db->go_src_user_access_h5;
         $collection->insert($request_data);
     }
+
     //测试redis 连接
     public function redis_get()
     {
@@ -102,6 +112,7 @@ class Api_test extends Apibase {
         echo "Stored string in redis";
         print_r($arList);
     }
+
     //测试CI缓存
     public function driver_get()
     {
